@@ -1,0 +1,96 @@
+/* Обнуление отступов и базовая настройка */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Настройки для всей страницы */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #f7fafc;
+    padding: 40px 20px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Главный заголовок (Иван Иванов) */
+h1 {
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Подзаголовки (Учебный проект, Обо мне и т.д.) */
+h1 + p {
+    text-align: center;
+    color: #718096;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #2b6cb0;
+    margin: 40px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Текст приветствия */
+section p, body > p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* Навигационное меню (Обо мне | Мои навыки | Контакты) */
+body > p:nth-of-type(2) {
+    text-align: center;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    color: #a0aec0;
+}
+
+/* Списки (Что я уже умею) */
+ul {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #38a169;
+    font-weight: bold;
+}
+
+/* Контакты и Email/Telegram */
+body > p:has(img), 
+body > p:last-of-type {
+    margin-bottom: 8px;
+}
+
+/* Копирайт в самом низу страницы */
+body > p:last-child, 
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #a0aec0;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
